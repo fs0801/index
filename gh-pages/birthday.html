@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FoodScience:Birthday</title>
+<link href="css/tittle.css" rel="stylesheet" type="text/css" />
+<style>
+div {
+	color: #FFF;
+	text-align:center;
+	margin: 0px auto;
+
+}
+a {
+	text-decoration: none;
+	outline-color: #FFF
+}
+.bdiv {
+	text-align: center;
+	font: bold
+}
+#link{
+	border:none;
+	text-decoration:none;
+	}
+.chat	{ font:#FFF;
+	width: 56% !important;
+	margin: 0px auto}
+</style>
+<!-- Include jQuery Library -->
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<!-- Let's do the animation -->
+<script type="text/javascript">
+	$(function() {
+		// set opacity to nill on page load
+		$("ul#menu span").css("opacity","0");
+		// on mouse over
+		$("ul#menu span").hover(function () {
+			// animate opacity to full
+			$(this).stop().animate({
+				opacity: 1
+			}, 'slow');
+		},
+		// on mouse out
+		function () {
+			// animate opacity to nill
+			$(this).stop().animate({
+				opacity: 0
+			}, 'slow');
+		});
+	});
+</script>
+<script type="text/javascript" src="js/googletrack.js"></script>
+</head>
+
+<body>
+<ul id="menu">
+  <li><a href="index.html" class="home"><span></span></a></li>
+  <li><a href="telbook.html" class="telbook"><span></span></a></li>
+  <li><a href="birthday.html" class="birthday"><span></span></a></li>
+  <li><a href="notice.html" class="notice"><span></span></a></li>
+  <li><a href="movie.html" class="movie"><span></span></a></li>
+</ul>
+<div> 
+<img src="http://fmn.rrimg.com/fmn064/20120819/2255/original_Zxwz_225c00001f61125c.jpg"  />
+<!--
+<audio autoplay="autoplay" src="http://111.1.46.145/0/file.data.vdisk.me/27998899/c24f82600e19aa257fdb934291ff71f5c96e2367?ip=1345216997,10.73.26.26&ssig=QpYfYh3Exs&Expires=1345215797&KID=sae,l30zoo1wmz&fn=birthday.mp3"></audio> --></div>
+<div class="bdiv"> 
+    <script type="text/javascript" src="js/birthday.js" ></script> 
+</div> 
+<div class="chat">
+<br /><hr  align="center"/>
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1669949" async=""></script>
+<!-- UY END -->
+</div>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">var jiathis_config = {data_track_clickback:true};</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1343865849134941" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</body>
+</html>

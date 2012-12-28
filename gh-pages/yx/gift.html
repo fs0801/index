@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>gift</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script src="//mat1.gtimg.com/app/openjs/openjs.js#debug=yes"></script>
+</head>
+
+<body>
+<table id="addTable">
+  <tr id="addTr">
+    <td id="loginBt">登&nbsp;&nbsp;录</td>
+    <td id="addProject">选择项目</td>
+    <td id="inputkw">输入关键词</td>
+    <td id="keyword"><input type="text"  id="addText" value="请输入关键词"/></td>
+    <td id="reInputBt" >重输</td>
+    <td id="selectBt" >过滤</td>
+    <td id="searchBt" >搜索</td>
+  </tr>
+</table>
+<!---------------过滤器开始------------------------>
+<form>
+<table id="selectTable" class="setUpTable" style="display:none" >
+  <tr class="selectTr">
+    <th id="gender" class="selctTh">性别</th>
+    <td class="selctDetail" ><input type="checkbox" name="male" />
+      男性
+      <input type="checkbox" name="female" />
+      女性</td>
+  </tr>
+  <tr class="selectTr">
+    <th  id="age"  class="selctTh">年龄</th>
+    <td class="selctDetail">2</td>
+    <td rowspan="2" id="selectOkBt">确定</td>
+  </tr>
+  <tr class="selectTr">
+    <th id="area"  class="selctTh">地区</th>
+    <td class="selctDetail" >3</td>
+  </tr>
+  <tr class="selectTr">
+    <th id="other"  class="selctTh">其他</th>
+    <td class="selctDetail">4</td>
+  </tr>
+</table>
+<form>
+<!---------------过滤器结束------------------------> 
+<!---------------新建项目------------------------>
+<form>
+<table id="projectTable" class="setUpTable" style="display:none" >
+  <tbody>
+    <tr class="tbhd">
+      <th class="pjindex">序号</th>
+      <th class="pjname">项目名称</th>
+      <th class="ctTime">创建时间</th>
+      <th class="finish">完成度</th>
+      <th class="pjkwd">关键词</th>
+      <th class="ctnBut">继续</th>
+      <th class="delpjBut">删除</th>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr >
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ><input id="newpjName"  value="new project"/></td>
+      <td colspan="2" id="createPjBut">新建项目</td>
+    </tr>
+  </tfoot>
+</table>
+<form>
+<!---------------新建项目------------------------>
+<table id="fctTable">
+<tr id="fctTr">
+  <td id="ftBut">寻找目标 >></td>
+  <td id="ntBut">靠近目标 >></td>
+  <td id="atBut">帐号维护 >></td>
+  <td id="saBut">开始攻击 >></td>
+  <td id="eeBut">效果评估 >></td>
+</tr>
+<!---------------目标用户详情------------------------>
+<tr id="targetDetail" class="setUp" style="display:none">
+  <td colspan="5">
+  <table id="tdTable" class="setUpTable">
+      <tr class="tbhd">
+        <th id="index">序号</th>
+        <th id="snTh">昵称</th>
+        <th id="vipTh">vip</th>
+        <th id="cityTh">城市</th>
+        <th id="tmTh">时间</th>
+        <th id="wbTh">微博</th>
+        <th id="mcTh">评论</th>
+        <th id="delBut" >删除</th>
+      </tr>
+      <tbody id="tdTbody">
+      </tbody>
+      <tfoot>
+      <tr><td rowspan="8" id="clickToMore">翻看更多</td></tr>
+      </tfoot>
+    </table>
+    </td>
+</tr>
+<!---------------目标用户详情------------------------> 
+<!---------------靠近目标------------------------>
+<tr id="nearTarget" class="setUp"  style="display:none">
+  <td colspan="5">
+<form>
+  <table id="ntTable" class="setUpTable">
+    <tbody id="ntTbody">
+      <tr >
+        <td id="ntTime1"></td>
+        <td class="ntTool"><input type="checkbox" name="addTarget" />
+          添加好友</td>
+        <td rowspan="3" colspan="2" id="ntComment"><textarea id="ntComtTxt">评论内容</textarea></td>
+      </tr>
+      <tr>
+        <td id="ntTime2"></td>
+        <td class="ntTool" ><input type="checkbox" name="addTargetFr" />
+          添加目标的好友</td>
+      </tr>
+      <tr>
+        <td	id="ntTime3"></td>
+        <td class="ntTool"><input type="checkbox" name="cmt" />
+          评论
+          <input type="checkbox" name="aite" />
+          @其好友  ---></td>
+      </tr>
+      <tr>
+        <td 	id="ntstartButThis">评论此条</td>
+        <td id="ntstartButThat" >评论它条</td>
+        <td id="addRandom">末尾加随机字符</td>
+        <td ><input type="text" id="randomTxt" /></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+</td>
+</tr>
+<!---------------靠近目标------------------------> 
+
+<!---------------攻击模式------------------------>
+<tr id="attackMode" class="setUp" style="display:none" >
+  <td colspan="5"><form>
+      <table id="amTable" class="setUpTable">
+        <tbody id="amTbody">
+          <tr >
+            <td id="amTime1"></td>
+            <td class="amTool"><input type="checkbox" name="mailComment" />
+              给互粉的发站内信，其余发评论</td>
+            <td  colspan="2" id="amMail"><textarea id="amMailTxt">站内信内容</textarea></td>
+          </tr>
+          <tr>
+            <td id="amTime2"></td>
+            <td class="amTool" ><input type="checkbox" name="sendComment" />
+              给所有评论</td>
+            <td colspan="2" id="amComment"><textarea id="amComtTxt">评论内容</textarea></td>
+          </tr>
+          <tr>
+            <td	id="amTime3"></td>
+            <td class="amTool"><input type="checkbox" name="amaite" />
+              @其好友 </td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td 	id="ntTime4"></td>
+            <td id="ntstartBut" >开始执行</td>
+            <td id="addRandom">末尾加随机字符</td>
+            <td ><input type="text" id="randomTxt" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form></td>
+</tr>
+<!---------------攻击模式------------------------> 
+
+<!---------------开始运行------------------------>
+<tr id="status" class="setUp"  style="display:none" >
+  <td colspan="5"><table class="setUpTable">
+      <tbody>
+        <tr>
+          <td><textarea id="statusTxt">软件运行状态栏</textarea></td>
+        </tr>
+      <tbody>
+      <tfoot>
+        <tr>
+          <td id="startAtcBut">确定开始攻击</td>
+        </tr>
+      </tfoot>
+    </table></td>
+</tr>
+</table>
+<div onclick="localStorage.clear()">clearlocalStorage</div>
+<div id="sendThisCommentDiv">hhh</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+/*alert();
+function getLocalTime(nS) { 
+return new Date(parseInt(nS) * 1000).toLocaleString().substr(16,8)} 
+alert(getLocalTime(1293072805)); */
+var temp=new Date(parseInt("1293072805") * 1000).toLocaleString();
+var time= temp.substr(4,4)+(parseInt(temp.substr(8,2))+1)+"/"+temp.substr(16,2); 
+alert(time)
+</script>
+</head>
+
+<body>
+</body>
+</html>

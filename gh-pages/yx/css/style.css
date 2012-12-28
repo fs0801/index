@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+.okbg{ background:#093}
+.errbg{ background:#C00}
+.green{ background:#D0FFD0; }
+#addTable ,#fctTable{width:100%; color:#FFF;}
+#addTr,#fctTr{  background-color:#0080C0; height:40px; text-align:center;cursor:pointer;}
+.setUpTable{width:100%;text-align:center; border:1px  double #0080C0;}
+.selctTh{ color:#FFF; background-color:#5BADFF; width:60px;}
+.selctDetail{ border:1px dotted #0080C0;}
+#selectOkBt{ width:60px; background-color:#0080C0; cursor:pointer; color:#FFF; color:#FFF !important}
+.selctTr{  background-color:#0080C0; height:40px; text-align:center;cursor:pointer;}
+.setUpTable>tbody>tr>td { border:1px dotted #0080C0; color:#666 !important}
+
+#loginBt,reInputBt,#reInputBt,#selectBt,#searchBt{ width:80px;}
+#inputkw{width:100px;}
+
+#addText{ width:98%; height:80%;}
+<!--
+#selector {width:100%; height:160px }
+#eventTxt{ width:83%;  border:1px dotted #0080C0;}
+.evttd{ background-color:#0080C0; color:#FFF; line-height:170%}
+#statusTxt{ width:100%; height:500px;}
+#startAtcBut{ width:20%; color:#FFF!important; cursor:pointer; background-color:#5BADFF;}
+
+
+
+
+.tbhd{ color:#FFF; background-color:#5BADFF;}
+#mcTh,#index,.deltBut,.pjindex,.ctnBut,.delpjBut{ width:45px}
+.deltbut{ background-color:#F00!important; cursor:pointer; color:#FFF!important;}
+#vipTh{ width:30px}
+#tmTh,.ctTime { width:80px}
+#snTh,.pjname{ width:150px}
+#cityTh,.finish{ width:100px}
+.delItem{ background-color:#C50114!important}
+.txtTd,.nameTd{ text-align:left!important}
+#newpjName{ width:98%}
+#createPjBut{ background-color:#5BADFF!important; color:#FFF; cursor:pointer;}
+
+#ntTime1,#amTime1{ width:200px}
+.ntTool,.amTool{ width:300px; text-align:left}
+#ntstartButThat{ background-color:#5BADFF; cursor:pointer; color:#FFF!important}
+#ntstartButThis{ background-color:#5BADFF; cursor:pointer; color:#FFF!important}
+
+#addRandom{ width:150px}
+#randomTxt{ width: 98%}
+#ntComtTxt{ width:98%; height:98%}
+
+#amComtTxt,#amMailTxt{ width:98%; height:98%}
+
+.cstText,.actTxt{ width:100%;}
+#chsActTh{ width:100px;}
+#health{ width:100px;}
+#chsTh,#delAct{ width:50px;}
+#selcTittle{ width:50px}
+
+#clickToMore{ cursor:pointer; background-color:#C50114}

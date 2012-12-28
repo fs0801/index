@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>食品分子同学加好友</title>
+<script type="text/javascript" src="js/renren-gc.js"></script>
+<script type="text/javascript" src="js/renren-gc.js"></script>
+</head>
+<script type="text/javascript">
+Renren.init({appId:210525});
+
+function addFriends(target_id)
+{
+	var uiOpts={
+		url:"Friends_dialog",
+		display:"iframe",
+		params:{
+		target_id:target_id,
+		redirect_url:"http://foodscience0801.tk"
+		},
+		onSuccess:function(r){document.write("add Friends success.")},
+		onFailure:function(r){alert("添加失败")},
+		};
+		
+		Renren.ui(uiOpts);
+};
+
+
+</script>
+
+<body>
+<a href="javascript:addFriends("406607812");">加好友</a>
+</body>
+</html>
